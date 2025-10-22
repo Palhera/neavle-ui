@@ -4,7 +4,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@neavle/ui": [
+        "./projects/ui/src/public-api.ts"
+      ]
+    }
   },
   "include": [
     "src/**/*.ts"
