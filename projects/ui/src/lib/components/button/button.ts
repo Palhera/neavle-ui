@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'button[nvl-button]',
   imports: [],
   template: '<ng-content>',
-  styleUrl: './button.css'
+  styleUrl: './button.scss'
 })
 export class NvlButton {
 

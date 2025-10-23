@@ -1,59 +1,73 @@
-# NeavleUi
+# Neavle UI
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Angular workspace for the Neavle UI library and demo application. The project uses Angular 20 and Storybook 9 for component development and documentation.
 
-## Development server
+## Prerequisites
 
-To start a local development server, run:
+- Node.js 18+ (22 LTS recommended)
+- npm 9+
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Install dependencies once:
 
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Development
 
-```bash
-ng generate --help
-```
+- **App dev server**  
+  ```bash
+  npm start
+  ```  
+  Serves the demo application on `http://localhost:4200/` with live reload.
+
+- **Storybook**  
+  ```bash
+  npx ng run ui:storybook
+  ```  
+  Launches the component explorer on `http://localhost:6006/` using the Angular builder configuration.
 
 ## Building
 
-To build the project run:
+- **Application**  
+  ```bash
+  npm run build
+  ```  
+  Produces an optimized production build in `dist/neavle-ui`.
+
+- **UI library package**  
+  ```bash
+  npx ng build ui
+  ```  
+  Emits the library artifacts to `dist/ui`.
+
+- **Static Storybook**  
+  ```bash
+  npx ng run ui:build-storybook
+  ```  
+  Outputs a static Storybook bundle in `dist/storybook/ui`.
+
+## Testing
+
+Run unit tests with Karma:
 
 ```bash
-ng build
+npm test
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Useful CLI Commands
 
-## Running unit tests
+- Generate components, services, and more:
+  ```bash
+  ng generate component component-name
+  ng generate service feature/service-name
+  ```
+- List all available schematics:
+  ```bash
+  ng generate --help
+  ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Learning Resources
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular CLI documentation](https://angular.dev/tools/cli)
+- [Storybook for Angular docs](https://storybook.js.org/docs/angular)
