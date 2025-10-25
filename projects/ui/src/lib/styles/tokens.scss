@@ -1,0 +1,113 @@
+:root {
+  /* Brand palette */
+  --nvl-color-primary-50: #eef2ff;
+  --nvl-color-primary-100: #dae3ff;
+  --nvl-color-primary-200: #b5c5ff;
+  --nvl-color-primary-300: #8fa7ff;
+  --nvl-color-primary-400: #6c88fa;
+  --nvl-color-primary-500: #4d68f0;
+  --nvl-color-primary-600: #3a52cb;
+  --nvl-color-primary-700: #2d3fa5;
+  --nvl-color-primary-800: #233481;
+  --nvl-color-primary-900: #1c2b68;
+
+  --nvl-color-neutral-50: #f8f9fb;
+  --nvl-color-neutral-100: #f1f3f9;
+  --nvl-color-neutral-200: #e2e6f3;
+  --nvl-color-neutral-300: #c9d0e4;
+  --nvl-color-neutral-400: #a8b1c7;
+  --nvl-color-neutral-500: #8893ad;
+  --nvl-color-neutral-600: #697391;
+  --nvl-color-neutral-700: #505a73;
+  --nvl-color-neutral-800: #363f52;
+  --nvl-color-neutral-900: #1c2537;
+
+  --nvl-color-success-500: #1f8a4d;
+  --nvl-color-warning-500: #d47a00;
+  --nvl-color-danger-500: #c03221;
+
+  /* Semantic colors */
+  --nvl-color-surface: #ffffff;
+  --nvl-color-surface-subtle: var(--nvl-color-neutral-50);
+  --nvl-color-border-strong: var(--nvl-color-neutral-300);
+  --nvl-color-border-subtle: var(--nvl-color-neutral-200);
+  --nvl-color-text-strong: var(--nvl-color-neutral-900);
+  --nvl-color-text-muted: var(--nvl-color-neutral-600);
+  --nvl-color-focus-ring: rgba(77, 104, 240, 0.45);
+  --nvl-color-overlay: rgba(20, 29, 51, 0.4);
+  --nvl-color-disabled-surface: var(--nvl-color-neutral-200);
+  --nvl-color-disabled-text: var(--nvl-color-neutral-500);
+
+  /* Typography */
+  --nvl-font-family-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --nvl-font-size-xs: 0.75rem;
+  --nvl-font-size-sm: 0.875rem;
+  --nvl-font-size-md: 1rem;
+  --nvl-font-size-lg: 1.125rem;
+  --nvl-font-weight-regular: 400;
+  --nvl-font-weight-medium: 500;
+  --nvl-font-weight-semibold: 600;
+
+  /* Spacing */
+  --nvl-space-2xs: 0.125rem; /* 2px */
+  --nvl-space-xs: 0.25rem;   /* 4px */
+  --nvl-space-sm: 0.5rem;    /* 8px */
+  --nvl-space-md: 0.75rem;   /* 12px */
+  --nvl-space-lg: 1rem;      /* 16px */
+  --nvl-space-xl: 1.5rem;    /* 24px */
+  --nvl-space-2xl: 2rem;     /* 32px */
+
+  /* Sizing */
+  --nvl-size-input-height-sm: 2.25rem; /* 36px */
+  --nvl-size-input-height-md: 2.75rem; /* 44px */
+  --nvl-size-input-height-lg: 3.25rem; /* 52px */
+
+  /* Border radii */
+  --nvl-radius-sm: 0.25rem;
+  --nvl-radius-md: 0.5rem;
+  --nvl-radius-pill: 999px;
+
+  /* Borders */
+  --nvl-border-width-hairline: 1px;
+  --nvl-border-width-strong: 2px;
+
+  /* Shadows */
+  --nvl-shadow-sm: 0 1px 2px rgba(28, 37, 55, 0.14);
+  --nvl-shadow-md: 0 8px 24px rgba(28, 37, 55, 0.12);
+  --nvl-shadow-focus: 0 0 0 3px var(--nvl-color-focus-ring);
+
+  /* Motion */
+  --nvl-motion-duration-100: 100ms;
+  --nvl-motion-duration-150: 150ms;
+  --nvl-motion-duration-200: 200ms;
+  --nvl-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Button tokens */
+  --nvl-button-font-size: var(--nvl-font-size-sm);
+  --nvl-button-font-weight: var(--nvl-font-weight-semibold);
+  --nvl-button-line-height: 1.2;
+  --nvl-button-letter-spacing: 0.02em;
+  --nvl-button-height: var(--nvl-size-input-height-md);
+  --nvl-button-padding-inline: var(--nvl-space-lg);
+  --nvl-button-padding-inline-icon: var(--nvl-space-md);
+  --nvl-button-gap: var(--nvl-space-sm);
+  --nvl-button-radius: var(--nvl-radius-md);
+  --nvl-button-shadow-focus: 0 0 0 4px rgba(77, 104, 240, 0.25);
+  --nvl-button-primary-background: var(--nvl-color-primary-600);
+  --nvl-button-primary-background-hover: var(--nvl-color-primary-500);
+  --nvl-button-primary-background-active: var(--nvl-color-primary-700);
+  --nvl-button-primary-text: #ffffff;
+  --nvl-button-primary-border: transparent;
+  --nvl-button-disabled-background: var(--nvl-color-disabled-surface);
+  --nvl-button-disabled-text: var(--nvl-color-disabled-text);
+  --nvl-button-disabled-border: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --nvl-motion-duration-100: 0ms;
+    --nvl-motion-duration-150: 0ms;
+    --nvl-motion-duration-200: 0ms;
+    --nvl-motion-easing-standard: linear;
+  }
+}

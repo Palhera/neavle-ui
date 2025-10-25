@@ -1,9 +1,66 @@
 :host {
-    --base-color: var(--nvl-color-default);
-    
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--nvl-button-gap);
+  padding-inline: var(--nvl-button-padding-inline);
+  padding-left: var(--nvl-button-padding-inline);
+  padding-right: var(--nvl-button-padding-inline);
+  padding-block: 0;
+  min-height: var(--nvl-button-height);
+  border-radius: var(--nvl-button-radius);
+  border: var(--nvl-border-width-hairline) solid var(--nvl-button-primary-border);
+  background-color: var(--nvl-button-primary-background);
+  color: var(--nvl-button-primary-text);
+  font-family: var(--nvl-font-family-sans);
+  font-size: var(--nvl-button-font-size);
+  font-weight: var(--nvl-button-font-weight);
+  line-height: var(--nvl-button-line-height);
+  letter-spacing: var(--nvl-button-letter-spacing);
+  text-transform: none;
+  text-decoration: none;
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  box-shadow: none;
+  transform: translateY(0);
+  transition:
+    background-color var(--nvl-motion-duration-150) var(--nvl-motion-easing-standard),
+    box-shadow var(--nvl-motion-duration-100) var(--nvl-motion-easing-standard),
+    transform var(--nvl-motion-duration-100) var(--nvl-motion-easing-standard);
+}
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+:host(:hover:not(:disabled)) {
+  background-color: var(--nvl-button-primary-background-hover);
+  box-shadow: var(--nvl-shadow-sm);
+}
 
+:host(:active:not(:disabled)) {
+  background-color: var(--nvl-button-primary-background-active);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+:host(:focus-visible) {
+  outline: none;
+  box-shadow: var(--nvl-button-shadow-focus);
+  transform: translateY(0);
+}
+
+:host(:disabled),
+:host([disabled]) {
+  background-color: var(--nvl-button-disabled-background);
+  color: var(--nvl-button-disabled-text);
+  border-color: var(--nvl-button-disabled-border);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 1;
+}
+
+:host(:disabled) *,
+:host([disabled]) * {
+  pointer-events: none;
 }

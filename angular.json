@@ -134,6 +134,9 @@
               "-d",
               "projects/ui"
             ],
+            "styles": [
+              "projects/ui/src/lib/styles/tokens.scss"
+            ],
             "port": 6006
           }
         },
@@ -148,6 +151,9 @@
               "json",
               "-d",
               "projects/ui"
+            ],
+            "styles": [
+              "projects/ui/src/lib/styles/tokens.scss"
             ],
             "outputDir": "dist/storybook/ui"
           }
