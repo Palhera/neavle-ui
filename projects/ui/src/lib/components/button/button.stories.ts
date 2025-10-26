@@ -1,4 +1,4 @@
-import { NvlButton } from "../public-api";
+import { NvlButton } from "../../../public-api";
 
 export default {
     title: 'Components/Button',
